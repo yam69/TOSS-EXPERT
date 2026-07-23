@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
@@ -44,14 +45,14 @@ body{
     /* Change this */
     align-items:flex-start;
 
-    min-height:100svh;
+    min-height:100dvh;
     padding:30px 15px;
 }
 
 .card{
 
 width:100%;
-max-width:410px;
+width:min(100%,560px);
 
 background:rgba(255,255,255,.05);
 
@@ -61,7 +62,7 @@ backdrop-filter:blur(12px);
 
 border-radius:22px;
 
-padding:18px;
+padding:24px;
 
 text-align:center;
 
@@ -258,7 +259,28 @@ font-size:16px;
 }
 
 }
+@media (max-width:600px){
 
+.card{
+    margin-top:25px;
+    padding:22px;
+}
+
+.logo{
+    width:95px;
+    height:95px;
+}
+
+h1{
+    font-size:34px;
+}
+
+.button{
+    padding:18px;
+    font-size:20px;
+}
+
+}
 </style>
 
 </head>
