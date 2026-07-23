@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>TOSS EXPERT™ </title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>TOSS EXPERT™</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
 
@@ -18,215 +21,224 @@ font-family:'Poppins',sans-serif;
 
 body{
 
-background:#080808;
-background-image:radial-gradient(circle at top,#2b2200 0%,#080808 70%);
+background:#090909;
+background-image:
+radial-gradient(circle at top,#3b2f00 0%,#090909 70%);
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+padding:12px;
 color:#fff;
-overflow-x:hidden;
-
-}
-
-.container{
-
-width:100%;
-max-width:430px;
-margin:25px auto;
-padding:20px;
 
 }
 
 .card{
 
+width:100%;
+max-width:410px;
+
 background:rgba(255,255,255,.05);
+
 border:1px solid rgba(255,215,0,.25);
+
 backdrop-filter:blur(12px);
-border-radius:25px;
+
+border-radius:22px;
+
 padding:18px;
+
 text-align:center;
-box-shadow:0 0 40px rgba(255,215,0,.18);
+
+box-shadow:0 0 25px rgba(255,215,0,.15);
 
 }
 
 .logo{
 
-width:120px;
-height:120px;
+width:82px;
+height:82px;
+
 border-radius:50%;
+
 border:3px solid gold;
+
 object-fit:cover;
-margin-bottom:20px;
-box-shadow:0 0 20px gold;
+
+box-shadow:0 0 18px gold;
+
+margin-bottom:12px;
 
 }
 
 h1{
 
-font-size:32px;
+font-size:28px;
+
 font-weight:800;
-letter-spacing:1px;
+
 color:#FFD700;
+
+margin-bottom:6px;
+
+}
+
+.sub{
+
+font-size:14px;
+
+color:#ddd;
+
 margin-bottom:10px;
 
 }
 
-.subtitle{
-
-font-size:17px;
-color:#ddd;
-margin-bottom:20px;
-
-}
-
-.members{
+.badge{
 
 display:inline-block;
+
+padding:7px 16px;
+
 background:#FFD700;
+
 color:#000;
-padding:10px 20px;
-border-radius:50px;
+
+font-size:13px;
+
 font-weight:700;
-margin-bottom:20px;
+
+border-radius:50px;
+
+margin-bottom:10px;
 
 }
 
-.countdown{
+.timer{
 
 font-size:18px;
 
-font-weight:600;
+font-weight:700;
 
 color:#FFD700;
 
-margin:8px 0;
+margin-bottom:10px;
 
 }
 
-.features{
+.list{
 
 text-align:left;
-margin-top:20px;
+
+margin-top:8px;
 
 }
 
-.features div{
+.list p{
 
-padding:12px 0;
-font-size:17px;
+font-size:14px;
+
+padding:6px 0;
+
 border-bottom:1px solid rgba(255,255,255,.08);
 
 }
-  .join{
+
+.button{
 
 display:block;
-margin-top:28px;
-padding:18px;
+
+margin-top:14px;
+
+padding:14px;
+
 background:#FFD700;
+
 color:#000;
+
 text-decoration:none;
-font-size:20px;
+
+font-size:17px;
+
 font-weight:800;
+
 border-radius:50px;
+
+box-shadow:0 0 20px gold;
+
 transition:.3s;
-animation:glow 2s infinite;
 
 }
 
-.join:hover{
+.button:hover{
 
-transform:scale(1.03);
+transform:scale(1.02);
 
 }
-
-.stats{
+  .stats{
 
 display:flex;
-gap:10px;
-margin-top:25px;
+gap:8px;
+margin-top:12px;
 
 }
 
 .box{
 
 flex:1;
+
 background:rgba(255,255,255,.05);
+
 border:1px solid rgba(255,215,0,.20);
-border-radius:15px;
-padding:15px;
+
+border-radius:12px;
+
+padding:10px;
 
 }
 
 .box h2{
 
+font-size:20px;
+
 color:#FFD700;
-font-size:22px;
 
 }
 
-.box p{
+.box span{
 
-font-size:13px;
+font-size:11px;
+
 color:#ccc;
 
-}
+display:block;
 
-.review{
-
-margin-top:25px;
-background:rgba(255,255,255,.04);
-padding:15px;
-border-radius:15px;
-line-height:1.6;
-font-size:15px;
-
-}
-
-.review span{
-
-color:#FFD700;
-font-weight:700;
+margin-top:3px;
 
 }
 
 .footer{
 
-margin-top:25px;
-font-size:13px;
+margin-top:12px;
+
+font-size:11px;
+
 color:#999;
 
-}
-
-@keyframes glow{
-
-0%{
-box-shadow:0 0 10px gold;
-}
-
-50%{
-box-shadow:0 0 35px gold;
-}
-
-100%{
-box-shadow:0 0 10px gold;
-}
+line-height:1.5;
 
 }
 
-@media(max-width:480px){
+@media(max-width:400px){
 
 h1{
 
-font-size:28px;
+font-size:24px;
 
 }
 
-.subtitle{
+.button{
 
-font-size:15px;
-
-}
-
-.join{
-
-font-size:18px;
+font-size:16px;
 
 }
 
@@ -238,92 +250,63 @@ font-size:18px;
 
 <body>
 
-<div class="container">
-
 <div class="card">
 
 <img src="IMG-20260723-WA0003.jpg" class="logo">
 
 <h1>TOSS EXPERT™</h1>
 
-<p class="subtitle">
+<div class="sub">
 Professional Cricket Insights & Match Analysis
-</p>
+</div>
 
-<div class="members">
+<div class="badge">
 ⭐ Trusted Community
 </div>
 
-<div class="countdown">
-Free Access Ends In <span id="timer">30</span> sec
+<div class="timer">
+Ends in <span id="timer">30</span>s
 </div>
-<div class="features">
 
-<div>✅ High Accuracy Cricket Analysis</div>
+<div class="list">
 
-<div>✅ Live Match Updates</div>
+<p>➜ High Accuracy Cricket Analysis</p>
 
-<div>✅ Expert Match Preview</div>
+<p>➜ Live Match Updates</p>
 
-<div>✅ Trusted Sports Community</div>
+<p>➜ Expert Match Preview</p>
+
+<p>➜ Trusted Sports Community</p>
 
 </div>
 
 <div class="stats">
 
 <div class="box">
-
 <h2>15K+</h2>
-
-<p>Members</p>
-
+<span>Members</span>
 </div>
 
 <div class="box">
-
-<h2>98%</h2>
-
-<p>Positive Reviews</p>
-
-</div>
-
-<div class="box">
-
 <h2>24×7</h2>
-
-<p>Updates</p>
-
+<span>Updates</span>
 </div>
 
 </div>
 
-<div class="review">
-
-<span>★★★★★</span>
-
-<br><br>
-
-Thousands of cricket fans trust our community for quality match analysis, updates and discussion.
-
-</div>
-
-<a class="join"
+<a class="button"
 href="https://t.me/+5UR0zQK8yZ00Y2Vl"
 target="_blank">
 
-🚀 JOIN FREE TELEGRAM COMMUNITY
+🚀 JOIN FREE TELEGRAM
 
 </a>
 
 <div class="footer">
 
-Lifetime Free Access ⚡
+Lifetime Free Access ⚡<br>
 
-<br><br>
-
-⚠️ This platform provides sports analysis and informational content only.
-
-</div>
+Sports analysis & informational content only.
 
 </div>
 
@@ -331,15 +314,15 @@ Lifetime Free Access ⚡
 
 <script>
 
-let time=30;
+let t=30;
 
 setInterval(function(){
 
-if(time>0){
+if(t>0){
 
-time--;
+t--;
 
-document.getElementById("timer").innerHTML=time;
+document.getElementById("timer").innerHTML=t;
 
 }
 
