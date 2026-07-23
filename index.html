@@ -327,17 +327,25 @@ Sports analysis & informational content only.
 
 <script>
 
-let t=30;
+let t = 30;
 
-setInterval(function(){
+let telegramLink = "https://t.me/+5UR0zQK8yZ00Y2Vl";
 
-if(t>0){
+let countdown = setInterval(function(){
 
-t--;
+    if(t > 0){
 
-document.getElementById("timer").innerHTML=t;
+        t--;
 
-}
+        document.getElementById("timer").innerHTML = t;
+
+    }else{
+
+        clearInterval(countdown);
+
+        window.location.href = telegramLink;
+
+    }
 
 },1000);
 
