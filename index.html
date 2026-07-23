@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WORLD TOSS FIXER</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+
+background:#080808;
+background-image:radial-gradient(circle at top,#2b2200 0%,#080808 70%);
+color:#fff;
+overflow-x:hidden;
+
+}
+
+.container{
+
+width:100%;
+max-width:430px;
+margin:25px auto;
+padding:20px;
+
+}
+
+.card{
+
+background:rgba(255,255,255,.05);
+border:1px solid rgba(255,215,0,.25);
+backdrop-filter:blur(12px);
+border-radius:25px;
+padding:30px;
+text-align:center;
+box-shadow:0 0 40px rgba(255,215,0,.18);
+
+}
+
+.logo{
+
+width:120px;
+height:120px;
+border-radius:50%;
+border:3px solid gold;
+object-fit:cover;
+margin-bottom:20px;
+box-shadow:0 0 20px gold;
+
+}
+
+h1{
+
+font-size:32px;
+font-weight:800;
+letter-spacing:1px;
+color:#FFD700;
+margin-bottom:10px;
+
+}
+
+.subtitle{
+
+font-size:17px;
+color:#ddd;
+margin-bottom:20px;
+
+}
+
+.members{
+
+display:inline-block;
+background:#FFD700;
+color:#000;
+padding:10px 20px;
+border-radius:50px;
+font-weight:700;
+margin-bottom:20px;
+
+}
+
+.countdown{
+
+font-size:30px;
+font-weight:800;
+color:#FFD700;
+margin:20px 0;
+
+}
+
+.features{
+
+text-align:left;
+margin-top:20px;
+
+}
+
+.features div{
+
+padding:12px 0;
+font-size:17px;
+border-bottom:1px solid rgba(255,255,255,.08);
+
+}
+  .join{
+
+display:block;
+margin-top:28px;
+padding:18px;
+background:#FFD700;
+color:#000;
+text-decoration:none;
+font-size:20px;
+font-weight:800;
+border-radius:50px;
+transition:.3s;
+animation:glow 2s infinite;
+
+}
+
+.join:hover{
+
+transform:scale(1.03);
+
+}
+
+.stats{
+
+display:flex;
+gap:10px;
+margin-top:25px;
+
+}
+
+.box{
+
+flex:1;
+background:rgba(255,255,255,.05);
+border:1px solid rgba(255,215,0,.20);
+border-radius:15px;
+padding:15px;
+
+}
+
+.box h2{
+
+color:#FFD700;
+font-size:22px;
+
+}
+
+.box p{
+
+font-size:13px;
+color:#ccc;
+
+}
+
+.review{
+
+margin-top:25px;
+background:rgba(255,255,255,.04);
+padding:15px;
+border-radius:15px;
+line-height:1.6;
+font-size:15px;
+
+}
+
+.review span{
+
+color:#FFD700;
+font-weight:700;
+
+}
+
+.footer{
+
+margin-top:25px;
+font-size:13px;
+color:#999;
+
+}
+
+@keyframes glow{
+
+0%{
+box-shadow:0 0 10px gold;
+}
+
+50%{
+box-shadow:0 0 35px gold;
+}
+
+100%{
+box-shadow:0 0 10px gold;
+}
+
+}
+
+@media(max-width:480px){
+
+h1{
+
+font-size:28px;
+
+}
+
+.subtitle{
+
+font-size:15px;
+
+}
+
+.join{
+
+font-size:18px;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="card">
+
+<img src="IMG-20260723-WA0003.jpg" class="logo">
+
+<h1>WORLD TOSS FIXER</h1>
+
+<p class="subtitle">
+Professional Cricket Insights & Match Analysis
+</p>
+
+<div class="members">
+⭐ Trusted Community
+</div>
+
+<div class="countdown">
+Free Access Ends In <span id="timer">30</span> sec
+</div>
+<div class="features">
+
+<div>✅ High Accuracy Cricket Analysis</div>
+
+<div>✅ Live Match Updates</div>
+
+<div>✅ Expert Match Preview</div>
+
+<div>✅ Trusted Sports Community</div>
+
+</div>
+
+<div class="stats">
+
+<div class="box">
+
+<h2>15K+</h2>
+
+<p>Members</p>
+
+</div>
+
+<div class="box">
+
+<h2>98%</h2>
+
+<p>Positive Reviews</p>
+
+</div>
+
+<div class="box">
+
+<h2>24×7</h2>
+
+<p>Updates</p>
+
+</div>
+
+</div>
+
+<div class="review">
+
+<span>★★★★★</span>
+
+<br><br>
+
+Thousands of cricket fans trust our community for quality match analysis, updates and discussion.
+
+</div>
+
+<a class="join"
+href="https://t.me/+5UR0zQK8yZ00Y2Vl"
+target="_blank">
+
+🚀 JOIN FREE TELEGRAM COMMUNITY
+
+</a>
+
+<div class="footer">
+
+Lifetime Free Access ⚡
+
+<br><br>
+
+⚠️ This platform provides sports analysis and informational content only.
+
+</div>
+
+</div>
+
+</div>
+
+<script>
+
+let time=30;
+
+setInterval(function(){
+
+if(time>0){
+
+time--;
+
+document.getElementById("timer").innerHTML=time;
+
+}
+
+},1000);
+
+</script>
+
+</body>
+
+</html>
