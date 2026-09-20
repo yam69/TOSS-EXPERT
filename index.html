@@ -55,9 +55,19 @@ radial-gradient(circle at top,#181100 0%,#050505 70%,#000 100%);
 width:100%;
 width:min(100%,560px);
 
-background:rgba(20,20,20,.92);
+background:
+linear-gradient(
+    rgba(0,0,0,.78),
+    rgba(0,0,0,.88)
+),
+url("bg.jpg");
+
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+
 border:1px solid rgba(255,215,0,.45);
-backdrop-filter:blur(12px);
+backdrop-filter:blur(10px);
 
 border-radius:22px;
 
